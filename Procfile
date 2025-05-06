@@ -1,2 +1,2 @@
-web: gunicorn student_registration_system.wsgi:application
+gunicorn student_registration_system.wsgi:application
 
