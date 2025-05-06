@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: student-registration-system
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn student_registration_system.wsgi:application"
+    pythonVersion: 3.11
